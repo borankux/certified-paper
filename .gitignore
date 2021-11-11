@@ -1,0 +1,6 @@
+.scanner-works/
+./paperstamp
+*.exe
+vendor/
+.idea
+*.log
