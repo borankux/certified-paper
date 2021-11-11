@@ -14,7 +14,7 @@ func main() {
 	})
 
 	//userRoutes
-	userRoutes := app.Group("/userRoutes")
+	userRoutes := app.Group("/user")
 	userRoutes.POST("/login", user.Login)
 	userRoutes.POST("/logout", user.Logout)
 	userRoutes.POST("/register", user.Register)

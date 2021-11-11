@@ -1,6 +1,9 @@
-.scanner-works/
+.scannerwork/
 ./paperstamp
 *.exe
 vendor/
 .idea
 *.log
+coverage.out
+out
+sonar.sh

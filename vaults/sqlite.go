@@ -4,10 +4,6 @@ import (
 	"github.com/fatih/color"
 )
 
-func init() {
-
-}
-
 type SQLite struct {
 	Vault
 }
