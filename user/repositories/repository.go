@@ -1,4 +1,4 @@
-package user
+package repositories
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 )
 
 
-func FindUserById(id int) (interface{}, error){
+func FindUserById(id int) (dto.User, error){
 	u := dto.User{
 		ID:       1,
 		Name:     "",
@@ -24,5 +24,5 @@ func FindUserById(id int) (interface{}, error){
 		return u, nil
 	}
 
-	return nil, errors.New("cannot find user")
+	return dto.User{}, errors.New("cannot find user")
 }

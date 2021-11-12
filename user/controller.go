@@ -2,13 +2,14 @@ package user
 
 import (
 	"fmt"
+	"github.com/borankux/paperstamp/database"
 	"github.com/borankux/paperstamp/requests"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
 func Login(ctx *gin.Context) {
-	//will do
+
 }
 
 func Logout(ctx *gin.Context) {
@@ -23,6 +24,8 @@ func Register(ctx *gin.Context) {
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, err.Error())
 	}
+
+	database.FileDB{}.DeleteUser(1)
 
 	fmt.Println(req)
 }

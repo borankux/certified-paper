@@ -1,8 +1,8 @@
 package dto
 
 const (
-	CONTACT_TYPE_EMAIL = iota
-	CONTACT_TYPE_PHONE
+	ContactTypeEmail = iota
+	ContactTypePhone
 )
 
 type User struct {

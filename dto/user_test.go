@@ -11,12 +11,12 @@ func TestUserStruct(t *testing.T) {
 		{
 			ID:    0,
 			Value: "18621577147",
-			Type:  dto.CONTACT_TYPE_PHONE,
+			Type:  dto.ContactTypePhone,
 		},
 		{
 			ID:    1,
 			Value: "test@test.com",
-			Type:  dto.CONTACT_TYPE_EMAIL,
+			Type:  dto.ContactTypeEmail,
 		},
 	}
 	testUser := dto.User{
@@ -27,6 +27,6 @@ func TestUserStruct(t *testing.T) {
 	}
 	assert.Equal(t, "test_user", testUser.Name)
 	assert.Equal(t, "test_password", testUser.Password)
-	assert.Equal(t, dto.CONTACT_TYPE_EMAIL, testUser.Contacts[1].Type)
+	assert.Equal(t, dto.ContactTypeEmail, testUser.Contacts[1].Type)
 	assert.Equal(t, "test@test.com", testUser.Contacts[1].Value)
 }
