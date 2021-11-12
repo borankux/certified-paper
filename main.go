@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/borankux/paperstamp/admin"
-	"github.com/borankux/paperstamp/user"
+	"github.com/borankux/certified-paper/admin"
+	"github.com/borankux/certified-paper/user"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

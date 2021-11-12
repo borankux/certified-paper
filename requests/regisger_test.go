@@ -1,7 +1,7 @@
 package requests_test
 
 import (
-	"github.com/borankux/paperstamp/requests"
+	"github.com/borankux/certified-paper/requests"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

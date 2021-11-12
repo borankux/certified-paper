@@ -3,7 +3,7 @@ package user_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/borankux/paperstamp/user"
+	"github.com/borankux/certified-paper/user"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"io/ioutil"

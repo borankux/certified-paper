@@ -1,7 +1,7 @@
 package dto_test
 
 import (
-	"github.com/borankux/paperstamp/dto"
+	"github.com/borankux/certified-paper/dto"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

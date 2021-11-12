@@ -2,7 +2,7 @@ package repositories
 
 import (
 	"errors"
-	"github.com/borankux/paperstamp/dto"
+	"github.com/borankux/certified-paper/dto"
 )
 
 

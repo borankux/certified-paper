@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/borankux/paperstamp/dto"
+	"github.com/borankux/certified-paper/dto"
 )
 
 type Database interface {

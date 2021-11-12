@@ -1,7 +1,7 @@
 package repositories_test
 
 import (
-	"github.com/borankux/paperstamp/user/repositories"
+	"github.com/borankux/certified-paper/user/repositories"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

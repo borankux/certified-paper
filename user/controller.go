@@ -2,8 +2,8 @@ package user
 
 import (
 	"fmt"
-	"github.com/borankux/paperstamp/database"
-	"github.com/borankux/paperstamp/requests"
+	"github.com/borankux/certified-paper/database"
+	"github.com/borankux/certified-paper/requests"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

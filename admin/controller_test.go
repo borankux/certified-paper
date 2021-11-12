@@ -1,7 +1,7 @@
 package admin_test
 
 import (
-	"github.com/borankux/paperstamp/admin"
+	"github.com/borankux/certified-paper/admin"
 	"github.com/gin-gonic/gin"
 	"net/http/httptest"
 	"testing"
