@@ -1,9 +1,8 @@
 package user
 
 import (
-	"fmt"
-	"github.com/borankux/certified-paper/database"
-	"github.com/borankux/certified-paper/requests"
+	"github.com/borankux/certified-paper/http/requests"
+	"github.com/borankux/certified-paper/services/user"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -25,9 +24,7 @@ func Register(ctx *gin.Context) {
 		ctx.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	database.FileDB{}.DeleteUser(1)
-
-	fmt.Println(req)
+	user.Register(req.Email, req.Password)
 }
 
 func SendCode(ctx *gin.Context) {

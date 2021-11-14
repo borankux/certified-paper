@@ -7,3 +7,4 @@ vendor/
 coverage.out
 out
 sonar.sh
+data

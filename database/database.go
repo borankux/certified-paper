@@ -1,13 +1,11 @@
 package database
 
-import (
-	"github.com/borankux/certified-paper/dto"
-)
+import "github.com/borankux/certified-paper/dto"
 
 type Database interface {
-	Init() bool
-	InsertUser(user dto.User)
+	Init() error
+	InsertUser(user dto.User) error
 	GetUserById(id int) dto.User
-	UserExists(email string) bool
-	DeleteUser(id int) bool
+	UserExists(email string) error
+	DeleteUser(id int) error
 }
