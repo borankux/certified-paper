@@ -3,15 +3,13 @@ package main
 import (
 	"github.com/borankux/certified-paper/admin"
 	"github.com/borankux/certified-paper/user"
+	"github.com/gin-gonic/contrib/static"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 func main() {
 	app := gin.Default()
-	app.GET("/", func(context *gin.Context) {
-		context.JSON(http.StatusOK, "ok")
-	})
+	app.Use(static.Serve("/", static.LocalFile("/ui/build", true)))
 
 	//userRoutes
 	userRoutes := app.Group("/user")
