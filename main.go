@@ -9,10 +9,14 @@ import (
 
 func main() {
 	app := gin.Default()
-	app.Use(static.Serve("/", static.LocalFile("/ui/build", true)))
 
-	//userRoutes
-	userRoutes := app.Group("/user")
+	//UI
+	app.Use(static.Serve("/", static.LocalFile("/ui/build", true)))
+	//API
+	api := app.Group("/api")
+
+	//UserRoutes
+	userRoutes := api.Group("/user")
 	{
 		userRoutes.POST("/login", user.Login)
 		userRoutes.POST("/logout", user.Logout)
@@ -24,7 +28,7 @@ func main() {
 		userRoutes.GET("/articles", user.GetArticle)
 	}
 
-	//adminRoutes
+	//AdminRoutes
 	adminRoutes := app.Group("/admin")
 	{
 		adminRoutes.POST("/login", admin.Login)
